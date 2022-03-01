@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"text/template"
 
-	"github.com/billglover/music-dashboard/lastfm"
+	"github.com/billglover/now-playing/lastfm"
 )
 
 //go:embed templates/albums.html

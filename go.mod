@@ -1,3 +1,3 @@
-module github.com/billglover/music-dashboard
+module github.com/billglover/now-playing
 
 go 1.17
