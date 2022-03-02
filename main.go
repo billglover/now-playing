@@ -69,9 +69,9 @@ func (app *app) handleBase(w http.ResponseWriter, r *http.Request) {
 	// * remove template parsing on each request
 
 	data := struct{}{}
-	tmpl := template.Must(template.ParseFiles("templates/albums.html"))
+	//tmpl := template.Must(template.ParseFiles("templates/albums.html"))
 
-	err := tmpl.Execute(w, data)
+	err := app.page.Execute(w, data)
 	if err != nil {
 		fmt.Println(err)
 	}
