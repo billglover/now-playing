@@ -228,7 +228,7 @@ func (lfm *LFM) TopAlbums() ([]Album, error) {
 	q.Set("user", lfm.User)
 	q.Set("format", "json")
 	q.Set("limit", "12")
-	q.Set("period", "7d")
+	q.Set("period", "7day")
 	req.URL.RawQuery = q.Encode()
 
 	resp, err := lfm.Client.Do(req)
